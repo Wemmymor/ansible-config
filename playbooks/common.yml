@@ -9,6 +9,7 @@
       yum:
         name: wireshark
         state: latest
+---
 
 - name: update lb and db server
   hosts: lb, db
@@ -19,7 +20,6 @@
     - name: Update apt repo
       apt: 
         update_cache: yes
-
     - name: ensure wireshark is at the latest version
       apt:
         name: wireshark
