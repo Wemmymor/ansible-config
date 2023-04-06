@@ -9,8 +9,6 @@
       yum:
         name: wireshark
         state: latest
-
-
 - name: update lb and db server
   hosts: lb, db
   remote_user: ubuntu
