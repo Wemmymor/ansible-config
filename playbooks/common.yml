@@ -22,7 +22,6 @@
       apt:
         name: wireshark
         state: latest
-
 - name: create directory, file and set timezone on all servers
   hosts: webservers, nfs, lb, db 
   become: yes
