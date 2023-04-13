@@ -9,7 +9,7 @@
             - dev.yml
             - stage.yml
             - prod.yml
-            - uat.yml
+            - default.yml
           paths:
             - "{{ playbook_dir }}/../env-vars"
       tags:
