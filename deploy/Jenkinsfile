@@ -5,13 +5,6 @@ pipeline {
     ANSIBLE_CONFIG="${WORKSPACE}/deploy/ansible.cfg"
   }
 
-
-  parameters {
-    string(name: 'inventory', defaultValue: 'dev', decription: 'This is the inventory file for the ')
-  }
-
-
-
   stages {
     stage("Initial CleanUp") {
       steps {
