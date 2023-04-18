@@ -3,9 +3,9 @@
 - name: database assignment
   ansible.builtin.import_playbook: ../static-assignments/db.yml
 
-- hosts: nginx
+- hosts: lb
 - name: nginx assignment
-  ansible.builtin.import_playbook: ../static-assignments/nginx.yml
+  ansible.builtin.import_playbook: ../static-assignments/lb.yml
 
 
 #   site.yml content -prj 13
